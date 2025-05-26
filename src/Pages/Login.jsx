@@ -42,11 +42,11 @@ const Login = () => {
           <input name='password' type="password" className="input" placeholder="Password" required/>
           <div><a className="link link-hover">Forgot password?</a></div>
           <button type='submit' className="btn btn-neutral mt-4">Login</button>
-          <p className='text-red-500 text-center pt-2'>
-            {
-            error
-          }
+          {
+            error && <p className='text-red-500 text-center pt-2'>
+            {error}
           </p>
+          }
           <p className='font-semibold p-4 text-center'>Don't Have An Account ? <Link className='text-secondary' to={'/auth/register'}>Register</Link></p>
         </fieldset>
 
