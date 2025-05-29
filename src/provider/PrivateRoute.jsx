@@ -7,12 +7,12 @@ const PrivateRoute = ({children}) => {
     // if user thakle return children / er na takle navigate korbo login e .
     const {user, loading} = use(AuthContext);
     const location = useLocation();
-    console.log(location)
+    // console.log(location)
 
     if(loading){
         return <Loading></Loading>;
     }
-    console.log(user);
+    // console.log(user);
     if(user && user?.email){
         return children;
     }
