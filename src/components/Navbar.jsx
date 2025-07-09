@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='flex justify-between items-center'>
+        <div className='md:flex justify-between items-center flex-col'>
             <div className='w-45'>{user && user.email}</div>
             <div className='nav flex gap-5 text-accent'>
                 <NavLink to={'/'}>Home</NavLink>
